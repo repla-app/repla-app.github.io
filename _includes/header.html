@@ -8,6 +8,7 @@
         <nav>
           <ul>
             <li><a href="https://repla.app">Home</a></li>
+            <li><a href="{{ "/" | relative_url }}">Blog</a>
           {%- for path in page_paths -%}
             {%- assign my_page = site.pages | where: "path", path | first -%}
             {%- if my_page.title %}
