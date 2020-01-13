@@ -1,0 +1,16 @@
+---
+layout: post
+title: "What is Repla?"
+categories: Essay
+---
+
+Repla has now launched. The first version focuses on **Repla Server**, a plugin to make it easier to do local web development. If you've read about product development, the question comes up over and over again: What problem does this solve? The Repla Server plugin is designed to solve a specific problem: Making it easier for web developers to run their local web server so that it always refreshes. And, since Repla Server is the only plugin that's been released so far, that's what the web page talks about, because that's the benefit you can get from downloading and using Repla today. But Repla itself wasn't designed to solve a specific problem, this blog post is about how it was designed, and it explores the benefits you'll be able to get from using the app tomorrow.
+
+So if it wasn't designed to solve a specific problem, then how was Repla designed? When web developers are asked which tools they use, the common answer is a web browser, a text editor, and a terminal. None of these tools are designed to solve a specific problem either, instead, they're designed to be adaptable. They shape themselves to the problem at hand. But one of these tools is not like the others, while terminals and text editors are specialized tools optimized for developers, the web browsers that developers are using are the same ones as everyone else. So Repla is designed to replace the web browser, or, more accurately, to sit along side it. Really web developers are using the web browser for two separate tasks: In one, or many, windows, they're researching the problem they're working on, and in another 
+they have a local web server open with their current project. Since web browsers are already accessed for the former, doing research, Repla isn't designed to replace that. Instead it's designed just as a web browser for developers, that brings the same flexibility that text editors and terminals have as specialized developer tools to the development web browser.
+
+[!screenshot with the web developer trifecta]
+
+So how do you design a development web browser that has the same flexibility as text editors and terminals? It turns out that text editors and terminals achieve their flexibility in very similar ways. They both use package managers to manage extensions, and those extensions often involve launching processes. Whether it's [downloading media](https://github.com/ytdl-org/youtube-dl/), [checking the correctness of code](https://atom.io/packages/linter), [perform compilation](https://lldb.llvm.org/), or [adding support for programming languages](https://marketplace.visualstudio.com/items?itemName=kiadstudios.vscode-swift), terminals and text editors flexibility comes from packages that can run processes.
+
+So what is Repla? Repla is web browser that achieves flexibility by being able to install packages and run processes, just like text editors and terminals do. And just like those apps, Repla can shape itself to the problem at hand. These capabilities happen to make a nice way to run a local web server, and have it automatically refresh after each change. So that's what the first plugin, Repla Server, does. But that's far from the only use case for this combination, our next post [Repla Use Cases]() explores some of the others.
