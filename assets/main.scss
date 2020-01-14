@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header[role=banner] img {
+  display: block;
+}
+
+header[role=banner] h1 a {
+  display: inline-block;
+  line-height: normal;
+}
+
+header[role=banner] h1 {
+  line-height: normal;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
