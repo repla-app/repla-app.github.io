@@ -3,17 +3,16 @@
 
 @import "{{ site.theme }}";
 
-header[role=banner] img {
+header[role="banner"] img {
   display: block;
 }
 
-header[role=banner] h1 a {
+header[role="banner"] h1 a {
   display: inline-block;
   line-height: normal;
 }
 
-header[role=banner] h1 {
-  line-height: normal;
-  margin-block-start: 0;
-  margin-block-end: 0;
+header[role="banner"] h1 {
+  line-height: 0;
+  margin-bottom: $line-height;
 }
