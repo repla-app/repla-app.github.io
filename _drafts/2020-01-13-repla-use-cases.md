@@ -6,7 +6,7 @@ categories: Essay
 
 In [What is Repla?](), we explained how Repla is a development web browser that's designed by be flexible the same way text editors and terminals are, by using package management and running processes. In order to talk about use cases for Repla, we first have to talk about how Repla is different than text editors and terminals, because it's through these difference that its use cases emerge.
 
-Text editors and terminals have another similarity that Repla does not share, they're both focused on plain text. As a development web browser, Repla is instead focused on the web rendering engine, which has a few advantages over plain text. For example rendered web content can display media, like pictures and video, and it can render rich text with combinations of fonts and colors, and it can be interactive, in particular because it supports hyperlinks. So when we're looking for good use cases, we're looking for situations that can take advantage of these attributes.
+Text editors and terminals have another similarity that Repla does not share, they're both focused on plain text. As a development web browser, Repla is instead focused on the web rendering engine, which has a few advantages over plain text. For example rendered web content can display media, like pictures and video, and it can render rich text with combinations of fonts and colors, and it can be interactive, in particular because it supports hyperlinks. So when we're looking for good use cases, we're looking for situations that can take advantage of these attributes[^addressingvscode].
 
 ## Search
 
@@ -23,7 +23,12 @@ The first use case we'll look at is the prototype [Search plugin](https://github
 	tc_search.rb:19:class TestDependencies < Minitest::Test
 	tc_search.rb:27:class TestSearch < Minitest::Test
 
-So the first match is in file `tc_controller.rb` on line `19`. While quite useful on its own, the output of `grep` isn't interactive. The Repla Search plugin displays the results of a `grep` search rendered as HTML, with the filename as a link. Following the link opens the file in the default app for that file type. A future version of the plugin will also add [outliner](https://en.wikipedia.org/wiki/Outliner) functionality, such allowing each files list of matches to be collapsed, e.g., to only see the list of filenames with matches or only keep the files that you're interested in uncollapsed.
+So the first match is in file `tc_controller.rb` on line `19`. While quite useful on its own, the output of `grep` isn't interactive.
+
+![Search](/assets/2020-01-13-search.png)
+
+
+The Repla Search plugin displays the results of a `grep` search rendered as HTML, with the filename as a link. Following the link opens the file in the default app for that file type. A future version of the plugin will also add [outliner](https://en.wikipedia.org/wiki/Outliner) functionality, such allowing each files list of matches to be collapsed, e.g., to only see the list of filenames with matches or only keep the files that you're interested in uncollapsed.
 
 ## Markdown
 
@@ -33,13 +38,19 @@ The prototype [Markdown plugin](https://github.com/repla-app/Markdown.replaplugi
 
 While there are already [great apps](https://marked2app.com/) that provide Markdown rendering, the flexibility of Repla's extensible model means similar plugins that don't exist yet could be made. For example, a plugin for the [Mermaid diagramming language](https://github.com/mermaid-js/mermaid) would allow developers to track [class](https://en.wikipedia.org/wiki/Data-flow_diagram) and [control-flow](https://en.wikipedia.org/wiki/Control-flow_diagram) diagrams in version control along-side their source code, just like Markdown files are today.
 
+![Mermaid](/assets/2020-01-13-mermaid.png)
+
 ## REPL
 
 The prototype [IRB plugin](https://github.com/repla-app/IRB.replaplugin) shows the output of the results of executing code in `IRB` and provides an API that allows integrations like evaluating the code that's currently selected in your text editor.
 
+![IRB](/assets/2020-01-13-irb.png)
+
 ## Live Coding
 
 Going one step further then the REPL plugins, the planned [live coding plugins](https://repla.app/live-coding.html) will execute an entire document through a REPL incrementally, allowing you to see the results of your code executing live.
+
+![Live Coding](/assets/2020-01-13-live-coding.png)
 
 ## Summary
 
