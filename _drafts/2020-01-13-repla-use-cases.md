@@ -35,19 +35,23 @@ The Repla Search plugin displays the results of a `grep` search rendered as HTML
 
 ![Markdown](/assets/2020-01-13-markdown.png)
 
-The prototype [Markdown plugin](https://github.com/repla-app/Markdown.replaplugin) takes advantage of the web rendering engine to render rich text and inline images, as well as being able to follow links.
+The prototype [Markdown plugin](https://github.com/repla-app/Markdown.replaplugin) is a natural match for Repla's features, taking advantage of web rendering to display rich text and inline images, as well as being able to follow links.
 
 ## Diagramming
 
 ![Mermaid](/assets/2020-01-13-mermaid.png)
 
-There are already some [great apps](https://marked2app.com/) that do Markdown rendering, but the flexibility of Repla's package model means that similar plugins can be made for formats that aren't supported by any existing apps. For example, a plugin for the [Mermaid diagramming language](https://github.com/mermaid-js/mermaid) would allow developers to track [class](https://en.wikipedia.org/wiki/Data-flow_diagram) and [control-flow](https://en.wikipedia.org/wiki/Control-flow_diagram) diagrams in version control alongside their source code, just like Markdown files are today.
+There are already some [great apps](https://marked2app.com/) that do Markdown rendering, but the flexibility of Repla's package model means similar plugins can be made for formats that aren't yet supported by any existing apps. For example, a plugin for the [Mermaid diagramming language](https://github.com/mermaid-js/mermaid) would allow developers to track [class](https://en.wikipedia.org/wiki/Data-flow_diagram) and [control-flow](https://en.wikipedia.org/wiki/Control-flow_diagram) diagrams in version control alongside source code, just like Markdown files are today.
 
 ## REPL
 
-The prototype [IRB plugin](https://github.com/repla-app/IRB.replaplugin) shows the output of the results of executing code in `IRB` and provides an API that allows integrations like evaluating the code that's currently selected in your text editor.
+
+
+The REPL, or [read–eval–print loop](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop), is environment where you enter source code and see the result of it being evaluated. REPLs are an underutilized programming tool today, part of the problem is that using them usually requires writing source code at a plain command prompt, whereas most developers are accustomed to writing code in their text editor, an environment that provides important features for programming such as [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting), [autocomplete](https://en.wikipedia.org/wiki/Autocomplete), and [automatically checking for common issues](https://en.wikipedia.org/wiki/Lint_(software)).
 
 ![IRB](/assets/2020-01-13-irb.png)
+
+The prototype [IRB plugin](https://github.com/repla-app/IRB.replaplugin) for Ruby's REPL, [`irb`](https://en.wikipedia.org/wiki/Interactive_Ruby_Shell), solves these problems by allowing text editors to send the selected source code to the REPL to be evaluated.
 
 ## Live Coding
 
