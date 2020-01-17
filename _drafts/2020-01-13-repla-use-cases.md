@@ -57,8 +57,8 @@ The prototype [IRB plugin](https://github.com/repla-app/IRB.replaplugin) for Rub
 
 ![Live Coding](/assets/2020-01-13-live-coding.png)
 
-Taking the REPL plugin one step further, the planned [live coding plugins](https://repla.app/live-coding.html) will execute an entire document through a REPL automatically, allowing you to see the results of your code executing live as you program.
+Taking the REPL plugin one step further, the planned [live coding plugins](https://repla.app/live-coding.html) will execute an entire document through a REPL automatically, allowing you to see the results of your code executing live as you write it.
 
 ## Summary
 
-These are a few example use cases of having a web browser with that can run processes and package management. But the real goal is provide a space where new use cases can emerge, much like the terminal and the text editor allow people to solve their own problems by extending them.
+These are just a few use cases for Repla, a web renderer that can be extended with packages that can run processes, but there are many more. The real goal is to provide a new place where developers can solve their own problems by writing their own plugins for Repla, and then sharing them, the same way they do for text editors and terminals today.
