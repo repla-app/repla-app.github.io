@@ -4,11 +4,11 @@ title: "Repla Use Cases"
 categories: Essay
 ---
 
-In [What is Repla?](/2020/01/13/what-is-repla/), we explained how Repla is designed to be adaptable, just like text editors and terminals are, by being extended with [packages](https://en.wikipedia.org/wiki/Package_manager) that run [processes](https://en.wikipedia.org/wiki/Process_(computing)). This post is about some of the use cases of this combination. But before we get to that, we have to talk about how Repla is *different* from text editors and terminals, because it's through the differences that the good use cases emerge.
+In [What is Repla?](/2020/01/13/what-is-repla/), we explained how Repla is designed to be adaptable, just like text editors and terminals are, by being extended with [packages](https://en.wikipedia.org/wiki/Package_manager) that run [processes](https://en.wikipedia.org/wiki/Process_(computing)). This post is about some of the use cases that this enables. But before we get to those, we have to talk about how Repla is *different* from text editors and terminals, because it's through the differences that the use cases emerge.
 
-Besides being extensible through packages that run processes, text editors and terminals share another similarity, one that is not shared by Repla: They're both focused on plain text, while Repla is instead focused on the web rendering engine.
+In addition to being extensible through packages that run processes, text editors and terminals share another similarity, one that's *not* shared by Repla: They're both focused on plain text, while Repla is instead focused on rendered web content.
 
-There are a lot of things a web rendering engine can do that plain text can't, some examples are display media, like pictures, video, and graphics, it can render rich text, with different combinations of fonts and colors, and it can be interactive, responding to input in any manner it chooses, in particular by supporting hyperlinks. So when we're looking for good Repla use cases, we're looking for problems that can take advantage of these attributes.
+There is a lot of things a web renderer can do that plain text cannot, some examples include displaying media, like pictures, video, and graphics; rendering rich text, with different combinations fonts and colors; and it can be interactive, responding to input in any manner it chooses, in particular by supporting hyperlinks. So when we're looking for good Repla use cases, we're looking for problems that can take advantage of these attributes.
 
 ## Search
 
