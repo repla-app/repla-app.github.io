@@ -55,9 +55,9 @@ The prototype [IRB plugin](https://github.com/repla-app/IRB.replaplugin) for Rub
 
 ## Live Coding
 
-Going one step further then the REPL plugins, the planned [live coding plugins](https://repla.app/live-coding.html) will execute an entire document through a REPL incrementally, allowing you to see the results of your code executing live.
-
 ![Live Coding](/assets/2020-01-13-live-coding.png)
+
+Taking the REPL plugin one step further, the planned [live coding plugins](https://repla.app/live-coding.html) will execute an entire document through a REPL automatically, allowing you to see the results of your code executing live as you program.
 
 ## Summary
 
