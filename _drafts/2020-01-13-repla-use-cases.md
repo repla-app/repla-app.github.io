@@ -4,7 +4,7 @@ title: "Repla Use Cases"
 categories: Essay
 ---
 
-In [What is Repla?](/2020/01/13/what-is-repla/), we explained how Repla is a development web browser that's designed by be flexible the same way text editors and terminals are, by using package management and running processes. In order to talk about use cases for Repla, we first have to talk about how Repla is different than text editors and terminals, because it's through these difference that its use cases emerge.
+In [What is Repla?](/2020/01/13/what-is-repla/), we explained how Repla is designed to be as adaptable as terminals and text editors are by being extensible through packages that run processes. This post will illustrate this adaptability by showing some use cases, but before we do that, we have to talk about how Repla is *different* than terminals and text editors, because it's through those differences that the use cases emerge.
 
 Text editors and terminals have another similarity that Repla does not share, they're both focused on plain text. As a development web browser, Repla is instead focused on the web rendering engine, which has a few advantages over plain text. For example rendered web content can display media, like pictures and video, and it can render rich text with combinations of fonts and colors, and it can be interactive, in particular because it supports hyperlinks. So when we're looking for good use cases, we're looking for situations that can take advantage of these attributes[^addressingvscode].
 
