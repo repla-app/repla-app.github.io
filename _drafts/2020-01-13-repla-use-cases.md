@@ -4,7 +4,7 @@ title: "Repla Use Cases"
 categories: Essay
 ---
 
-In [What is Repla?](/2020/01/13/what-is-repla/), we explained how Repla is designed to be adaptable, like text editors and terminals, by being extensible with packages that run processes. This post will show some use cases that take advantage this. But before we do that, we have to talk for a minute about how Repla is *different* than terminals and text editors, because it's through these differences that the use cases emerge.
+In [What is Repla?](/2020/01/13/what-is-repla/), we explained how Repla is designed to be adaptable, like text editors and terminals, by being extensible with [packages](https://en.wikipedia.org/wiki/Package_manager) that run [processes](https://en.wikipedia.org/wiki/Process_(computing)). This post will show some use cases that take advantage this. But before we do that, we have to talk for a minute about how Repla is *different* than terminals and text editors, because it's through these differences that the use cases emerge.
 
 Besides being extensible through packages that run processes, text editors and terminals share another similarity, one that is not shared by Repla: They're both focused on plain text, while Repla is instead focused on the web rendering engine.
 
@@ -35,13 +35,13 @@ The Repla Search plugin displays the results of a `grep` search rendered as HTML
 
 ![Markdown](/assets/2020-01-13-markdown.png)
 
-The prototype [Markdown plugin](https://github.com/repla-app/Markdown.replaplugin) takes advantage of the web rendering engine to render rich text and inline images, and being able to follow links.
+The prototype [Markdown plugin](https://github.com/repla-app/Markdown.replaplugin) takes advantage of the web rendering engine to render rich text and inline images, as well as being able to follow links.
 
 ## Diagramming
 
-While there are already [great apps](https://marked2app.com/) that provide Markdown rendering, the flexibility of Repla's extensible model means similar plugins that don't exist yet could be made. For example, a plugin for the [Mermaid diagramming language](https://github.com/mermaid-js/mermaid) would allow developers to track [class](https://en.wikipedia.org/wiki/Data-flow_diagram) and [control-flow](https://en.wikipedia.org/wiki/Control-flow_diagram) diagrams in version control along-side their source code, just like Markdown files are today.
-
 ![Mermaid](/assets/2020-01-13-mermaid.png)
+
+Some [great apps](https://marked2app.com/) already exist to provide Markdown rendering, but the flexibility of Repla's package model means that similar plugins can be made for formats that don't have any support for existing apps. For example, a plugin for the [Mermaid diagramming language](https://github.com/mermaid-js/mermaid) would allow developers to track [class](https://en.wikipedia.org/wiki/Data-flow_diagram) and [control-flow](https://en.wikipedia.org/wiki/Control-flow_diagram) diagrams in version control alongside their source code, just like Markdown files are today.
 
 ## REPL
 
