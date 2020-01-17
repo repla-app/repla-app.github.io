@@ -6,10 +6,9 @@ categories: Essay
 
 In [What is Repla?](/2020/01/13/what-is-repla/), we explained how Repla is designed to be adaptable, like text editors and terminals, by being extensible with packages that run processes. This post will show some use cases that take advantage this. But before we do that, we have to talk for a minute about how Repla is *different* than terminals and text editors, because it's through these differences that the use cases emerge.
 
-Besides packages and running processes, text editors and terminals share another similarity, one that Repla does not share: They're both focused on plain text, while Repla is focused on the web rendering engine.
+Besides being extensible through packages that run processes, text editors and terminals share another similarity, one that is not shared by Repla: They're both focused on plain text, while Repla is instead focused on the web rendering engine.
 
-
-As a development web browser, Repla is instead focused on the web rendering engine, which has a few advantages over plain text. For example rendered web content can display media, like pictures and video, and it can render rich text with combinations of fonts and colors, and it can be interactive, in particular because it supports hyperlinks. So when we're looking for good use cases, we're looking for situations that can take advantage of these attributes[^addressingvscode].
+There are a lot of things a web rendering engine can do that plain text can't, some examples are display media, like pictures, video, and graphics, it can render rich text, with different combinations of fonts and colors, and it can be interactive, responding to input in any manner it chooses, in particular by supporting hyperlinks. So when we're looking for good Repla use cases, we're looking for problems that can take advantage of these attributes.
 
 ## Search
 
@@ -58,10 +57,3 @@ Going one step further then the REPL plugins, the planned [live coding plugins](
 ## Summary
 
 These are a few example use cases of having a web browser with that can run processes and package management. But the real goal is provide a space where new use cases can emerge, much like the terminal and the text editor allow people to solve their own problems by extending them.
-
-* * *
-
-[^addressingvscode]: Visual Studio Code and Atom should be addressed specially because since those apps provide a nice mechanism for providing a lot of the same functionality as Repla, only integrated into a text editor. That may be a successful approach as well, but one of problem with that approach is that it causes those application to cross a threshold of complexity that makes these kinds of features very difficult to use when integrated into a text editor, in specific apps struggle when they try to incorporate two entirely different user-interface models into the same application. With that said, it would be great to see more of these kinds of features succeeding in these applications.
-
-
-
