@@ -8,12 +8,12 @@ In [What is Repla?](/2020/01/13/what-is-repla/), we explained how Repla is desig
 
 In addition to being extensible through packages that run processes, text editors and terminals share another similarity, one that's *not* shared by Repla: They're both focused on plain text, while Repla is instead focused on rendered web content.
 
-There is a lot of things a web renderer can do that plain text cannot, some examples include displaying media, like pictures, video, and graphics; rendering rich text, with different combinations fonts and colors; and it can be interactive, responding to input in any manner it chooses, in particular by supporting hyperlinks. So when we're looking for good Repla use cases, we're looking for problems that can take advantage of these attributes.
+There is a lot of things a web renderer can do that plain text cannot, some examples include displaying media, like pictures, video, and graphics; rendering rich text, with different combinations fonts and colors; and it can be interactive, responding to input in any manner it chooses, in particular by supporting hyperlinks. When we're looking for Repla use cases, we're looking for situations where we can take advantage of these attributes.
 
 ## Search
 
 The first use case we'll look at is the prototype [Search plugin](https://github.com/repla-app/Search.replaplugin). This plugin makes the output of 
-`grep` interactive. Often considered the canonical Unix tool, `grep` searches files for a regular expression and prints the matching lines. Here's what  output looks like searching [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) files recursively for `class`:
+the [`grep` commad-line tool](https://en.wikipedia.org/wiki/Grep) interactive. Often considered the canonical Unix tool, `grep` searches files for a regular expression, and prints the matching lines. Here's what its output looks like searching [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) files recursively for the search term `class`:
 
 	$ grep -rn class *.rb
 	tc_controller.rb:19:class TestDependencies < Minitest::Test
@@ -29,7 +29,7 @@ So the second line of output says the first match is in file `tc_controller.rb` 
 
 ![Search](/assets/2020-01-13-search.png)
 
-The Repla Search plugin displays the results of a `grep` search rendered as HTML, following a link for a filename, opens that file in the default app for that file type. More interactive features can be added such as [outliner](https://en.wikipedia.org/wiki/Outliner) functionality to allow each file's matches to be collapsed, to only see the list of filenames with matches, or to collapse the files you aren't interested in for example.
+The Repla Search plugin displays the results of a `grep` search rendered as HTML with the matching filenames as hyperlinks. Following a link for a filename opens that file in the default app for that file type. More interactive features will be added later, such as [outliner](https://en.wikipedia.org/wiki/Outliner) functionality allowing each file's matches to be collapsed, to for example only see the list of filenames with matches, or only leave the files you're interested in expanded.
  
 ## Markdown
 
