@@ -13,7 +13,7 @@ There are a lot of things a web rendering engine can do that plain text can't, s
 ## Search
 
 The first use case we'll look at is the prototype [Search plugin](https://github.com/repla-app/Search.replaplugin). This plugin makes the output of 
-`grep` interactive. Often considered the canonical Unix tool, `grep` searches files for a regular expression and then prints the matching lines. Here's what  output looks like this searching for `class`:
+`grep` interactive. Often considered the canonical Unix tool, `grep` searches files for a regular expression and prints the matching lines. Here's what  output looks like searching [Ruby](https://en.wikipedia.org/wiki/Ruby_(programming_language)) files recursively for `class`:
 
 	$ grep -rn class *.rb
 	tc_controller.rb:19:class TestDependencies < Minitest::Test
@@ -25,14 +25,15 @@ The first use case we'll look at is the prototype [Search plugin](https://github
 	tc_search.rb:19:class TestDependencies < Minitest::Test
 	tc_search.rb:27:class TestSearch < Minitest::Test
 
-So the first match is in file `tc_controller.rb` on line `19`. While quite useful on its own, the output of `grep` isn't interactive.
+So the second line of output says the first match is in file `tc_controller.rb` on line `19`. While the output of `grep` is quite useful on its own, it's not interactive.
 
 ![Search](/assets/2020-01-13-search.png)
 
-
-The Repla Search plugin displays the results of a `grep` search rendered as HTML, with the filename as a link. Following the link opens the file in the default app for that file type. A future version of the plugin will also add [outliner](https://en.wikipedia.org/wiki/Outliner) functionality, such allowing each files list of matches to be collapsed, e.g., to only see the list of filenames with matches or only keep the files that you're interested in uncollapsed.
-
+The Repla Search plugin displays the results of a `grep` search rendered as HTML, following a link for a filename, opens that file in the default app for that file type. More interactive features can be added such as [outliner](https://en.wikipedia.org/wiki/Outliner) functionality to allow each file's matches to be collapsed, to only see the list of filenames with matches, or to collapse the files you aren't interested in for example.
+ 
 ## Markdown
+
+![Markdown](/assets/2020-01-13-markdown.png)
 
 The prototype [Markdown plugin](https://github.com/repla-app/Markdown.replaplugin) takes advantage of the web rendering engine to render rich text and inline images, and being able to follow links.
 
