@@ -4,7 +4,7 @@ title: "Repla Use Cases"
 categories: Essay
 ---
 
-In [What is Repla?](/2020/01/13/what-is-repla/), we explained how Repla is designed to be as adaptable as terminals and text editors are by being extensible through packages that run processes. This post will illustrate this adaptability by showing some use cases, but before we do that, we have to talk about how Repla is *different* than terminals and text editors, because it's through those differences that the use cases emerge.
+In [What is Repla?](/2020/01/13/what-is-repla/), we explained how Repla is designed to be adaptable, like text editors and terminals, by being extensible with packages that run processes. This post will show some use cases that take advantage this. But before we do that, we have to talk for a minute about how Repla is *different* than terminals and text editors, because it's through these differences that the use cases emerge.
 
 Besides packages and running processes, text editors and terminals share another similarity, one that Repla does not share: They're both focused on plain text, while Repla is focused on the web rendering engine.
 
