@@ -45,7 +45,7 @@ There are already some [great apps](https://marked2app.com/) that do Markdown re
 
 ## REPL
 
-The REPL, or [read–eval–print loop](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop), is environment where you enter source code and see the result of it being evaluated. REPLs are an underutilized programming tool today, part of the problem is that using them usually requires writing source code at a plain command prompt, whereas most developers are accustomed to writing code in their text editor, an environment that provides important features for programming such as [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting), [autocomplete](https://en.wikipedia.org/wiki/Autocomplete), and [automatically checking for common issues](https://en.wikipedia.org/wiki/Lint_(software)).
+The REPL, or [read–eval–print loop](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop), is an environment where you enter source code and see the result of it being evaluated instantly. REPLs are an underutilized programming tool today, partially because using them usually requires writing source code at a plain command prompt, whereas most developers are accustomed to writing code in their own text editor, an environment that provides important features for programming such as [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting), [autocomplete](https://en.wikipedia.org/wiki/Autocomplete), and [automatically checking for common issues](https://en.wikipedia.org/wiki/Lint_(software)).
 
 ![IRB](/assets/2020-01-13-irb.png)
 
@@ -59,4 +59,4 @@ Taking the REPL plugin one step further, the planned [live coding plugins](https
 
 ## Summary
 
-These are just a few use cases for Repla, a web renderer that can be extended with packages that can run processes, but there are many more. The real goal is to provide a new place where developers can solve their own problems by writing their own plugins for Repla, and then sharing them, the same way they do for text editors and terminals today.
+These are just a few use cases for Repla, a web renderer that can be extended with packages that can run processes, and there are many more. The real goal is to provide a new place where developers can solve their own problems by writing their own plugins for Repla, and then sharing them, the same way they do for text editors and terminals today.
