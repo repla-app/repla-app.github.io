@@ -4,11 +4,11 @@ title: "Repla Use Cases"
 categories: Essay
 ---
 
-In [What is Repla?](/2020/01/13/what-is-repla/), we explained how Repla is designed to be adaptable, just like text editors and terminals are, by being extended with [packages](https://en.wikipedia.org/wiki/Package_manager) that run [processes](https://en.wikipedia.org/wiki/Process_(computing)). This post is about some of the use cases that this enables. But before we get to those, we have to talk about how Repla is *different* from text editors and terminals, because it's through the differences that the use cases emerge.
+In [What is Repla?](/2020/01/13/what-is-repla/), we explained how Repla is designed to be adaptable, just like text editors and terminals are, by being extended with [packages](https://en.wikipedia.org/wiki/Package_manager) that run [processes](https://en.wikipedia.org/wiki/Process_(computing)). This post is about some of the use cases that this enables. But before we get to those, we have to talk about how Repla is *different* from text editors and terminals, because it's through the differences that the use cases emerge.
 
-In addition to being extensible through packages that run processes, text editors and terminals share another similarity, one that's *not* shared by Repla: They're both focused on plain text, while Repla is instead focused on rendered web content.
+In addition to being extensible through packages that run processes, text editors and terminals share another similarity, one that's *not* shared by Repla: They're both focused on plain text, while Repla is instead focused on rendering web content.
 
-There is a lot of things a web renderer can do that plain text cannot, some examples include displaying media, like pictures, video, and graphics; rendering rich text, with different combinations fonts and colors; and it can be interactive, responding to input in any manner it chooses, in particular by supporting hyperlinks. When we're looking for Repla use cases, we're looking for situations where we can take advantage of these attributes.
+There are a lot of things a web renderer can do that plain text cannot. Some examples include displaying media, such as pictures, video, and graphics; rendering rich text with different combinations of fonts and colors; and it can be interactive, responding to input in any manner it chooses, in particular by supporting hyperlinks. When talking about Repla use cases, we're looking for situations where we can take advantage of these attributes.
 
 ## Search
 
@@ -29,7 +29,7 @@ So the second line of output says the first match is in file `tc_controller.rb` 
 
 ![Search](/assets/2020-01-13-search.png)
 
-The Repla Search plugin displays the results of a `grep` search rendered as HTML with the matching filenames as hyperlinks. Following a link for a filename opens that file in the default app for that file type. More interactive features will be added later, such as [outliner](https://en.wikipedia.org/wiki/Outliner) functionality allowing each file's matches to be collapsed, to for example only see the list of filenames with matches, or only leave the files you're interested in expanded.
+The Repla Search plugin displays the results of a `grep` search rendered as HTML with the matching filenames as hyperlinks. Following a link for a filename opens that file in the default app for that file type. More interactive features can be added later, such as [outliner](https://en.wikipedia.org/wiki/Outliner) functionality allowing each file's matches to be collapsed, for example to only see the list of filenames with matches, or only leave the files you're interested in expanded.
  
 ## Markdown
 
@@ -44,8 +44,6 @@ The prototype [Markdown plugin](https://github.com/repla-app/Markdown.replaplugi
 There are already some [great apps](https://marked2app.com/) that do Markdown rendering, but the flexibility of Repla's package model means similar plugins can be made for formats that aren't yet supported by any existing apps. For example, a plugin for the [Mermaid diagramming language](https://github.com/mermaid-js/mermaid) would allow developers to track [class](https://en.wikipedia.org/wiki/Data-flow_diagram) and [control-flow](https://en.wikipedia.org/wiki/Control-flow_diagram) diagrams in version control alongside source code, just like Markdown files are today.
 
 ## REPL
-
-
 
 The REPL, or [read–eval–print loop](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop), is environment where you enter source code and see the result of it being evaluated. REPLs are an underutilized programming tool today, part of the problem is that using them usually requires writing source code at a plain command prompt, whereas most developers are accustomed to writing code in their text editor, an environment that provides important features for programming such as [syntax highlighting](https://en.wikipedia.org/wiki/Syntax_highlighting), [autocomplete](https://en.wikipedia.org/wiki/Autocomplete), and [automatically checking for common issues](https://en.wikipedia.org/wiki/Lint_(software)).
 
