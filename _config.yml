@@ -20,6 +20,11 @@ remote_theme: repla-app/gyrocycle
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
+twitter:
+  username: repla_app
+  card: summary_large_image
 
 feed:
   path: /feed/atom/index.xml

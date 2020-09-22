@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "What is Repla?"
+image: /assets/2020-01-13-trifecta.png
 categories: Essay
 ---
 

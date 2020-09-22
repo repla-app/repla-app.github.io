@@ -21,9 +21,11 @@ theme: gyrocycle
 
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 
-feed:
-  path: /feed/atom/index.xml
+twitter:
+  username: repla_app
+  card: summary_large_image
 
 # Theme
 # show_excerpts: true
