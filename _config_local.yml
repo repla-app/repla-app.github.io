@@ -16,8 +16,8 @@ kramdown:
   footnote_backlink: "&#8617;&#xfe0e;"
 
 # theme: minima
-# remote_theme: repla-app/gyrocycle
-theme: gyrocycle
+# remote_theme: repla-app/cyclist
+theme: cyclist
 
 plugins:
   - jekyll-feed
