@@ -27,6 +27,9 @@ twitter:
   username: repla_app
   card: summary_large_image
 
+feed:
+  path: /feed/atom/index.xml
+
 # Theme
 # show_excerpts: true
 show_contents: true
