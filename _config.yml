@@ -15,7 +15,6 @@ kramdown:
   # character on iOS
   footnote_backlink: "&#8617;&#xfe0e;"
 
-# theme: minima
 remote_theme: robenkleene/cyclist
 
 plugins:
