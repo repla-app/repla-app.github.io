@@ -1,15 +1,34 @@
-@import "{{ site.theme }}";
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
 
-header[role="banner"] img {
-  display: block;
-}
+// @import "{{ site.theme }}";
+// @import "main";
 
-header[role="banner"] h1 a {
-  display: inline-block;
-  line-height: normal;
-}
+$font-size: 15px;
+$line-height: 22px;
 
-header[role="banner"] h1 {
-  line-height: 0;
-  margin-bottom: $line-height;
-}
+@import "../vendor/raster/dist/scss/raster.scss";
+// @import "raster";
+@import "layout";
+@import "override-typography";
+
+// h1 {
+//   display: none;
+// }
+
+// @import "typography"
+
+// header[role="banner"] img {
+//   display: block;
+// }
+
+// header[role="banner"] h1 a {
+//   display: inline-block;
+//   line-height: normal;
+// }
+
+// header[role="banner"] h1 {
+//   line-height: 0;
+//   margin-bottom: $line-height;
+// }
