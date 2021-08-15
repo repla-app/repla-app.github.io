@@ -1,0 +1,51 @@
+body {
+  font-family: "Fira Sans", Helvetica, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+}
+
+blockquote {
+  font-family: "Open Sans", Helvetica, Verdana, sans-serif;
+  color: #555;
+}
+
+pre,
+code {
+  font-family: "Fira Mono", "Menlo", "Courier New", "Courier", monospace;
+  color: #555;
+}
+
+nav {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+
+.post-date {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+header[role=banner] h1 {
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+}
+
+a {
+  color: #000;
+}
+
+a:visited {
+  color: #888;
+}
+
+a:hover {
+  color: #555;
+}

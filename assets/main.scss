@@ -2,17 +2,15 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// @import "{{ site.theme }}";
-// @import "main";
-
 $font-size: 15px;
 $line-height: 22px;
 
-@import "../vendor/raster/dist/scss/raster.scss";
-// @import "raster";
-@import "layout";
-@import "typography";
-@import "fonts";
+@import "{{ site.theme }}";
+// @import "main";
+
+// @import "layout";
+// @import "typography";
+// @import "fonts";
 
 // h1 {
 //   display: none;
