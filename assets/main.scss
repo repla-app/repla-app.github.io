@@ -6,28 +6,17 @@ $font-size: 15px;
 $line-height: 22px;
 
 @import "{{ site.theme }}";
-// @import "main";
 
-// @import "layout";
-// @import "typography";
-// @import "fonts";
+header[role="banner"] img {
+  display: block;
+}
 
-// h1 {
-//   display: none;
-// }
+header[role="banner"] h1 a {
+  display: inline-block;
+  line-height: normal;
+}
 
-// @import "typography"
-
-// header[role="banner"] img {
-//   display: block;
-// }
-
-// header[role="banner"] h1 a {
-//   display: inline-block;
-//   line-height: normal;
-// }
-
-// header[role="banner"] h1 {
-//   line-height: 0;
-//   margin-bottom: $line-height;
-// }
+header[role="banner"] h1 {
+  line-height: 0;
+  margin-bottom: $line-height;
+}
