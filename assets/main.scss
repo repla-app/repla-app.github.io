@@ -6,9 +6,15 @@ $font-size: 15px;
 $line-height: 22px;
 
 @import "{{ site.theme }}";
+@import "fonts";
 
 header[role="banner"] img {
   display: block;
+}
+
+header[role=banner] nav a {
+  line-height: $leading-height * 2;
+  font-size: $english;
 }
 
 header[role="banner"] h1 a {
