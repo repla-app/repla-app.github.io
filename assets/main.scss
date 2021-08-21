@@ -6,7 +6,7 @@ $font-size: 15px;
 $line-height: 22px;
 
 @import "{{ site.theme }}";
-@import "fonts";
+@import "typography";
 
 header[role="banner"] img {
   display: block;

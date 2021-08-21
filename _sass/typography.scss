@@ -1,0 +1,90 @@
+body {
+  font-family: "Fira Sans", Helvetica, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Rubik", sans-serif;
+}
+
+h1 {
+  @include header($double-small-pica-ratio);
+}
+
+h2 {
+  @include header($great-primer-ratio);
+}
+
+h3 {
+  @include header($english-ratio);
+}
+
+blockquote {
+  font-family: "Open Sans", Helvetica, Verdana, sans-serif;
+  color: #555;
+  font-size: $font-size - 1;
+}
+
+pre,
+code {
+  font-family: "Fira Mono", "Menlo", "Courier New", "Courier", monospace;
+  color: #555;
+}
+
+nav {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+
+.post-date {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: $font-size - 3;
+}
+
+.link h1,
+.link h2,
+.link h3,
+article h4,
+article h5,
+article h6 {
+  font-size: $font-size + 2;
+}
+
+a {
+  color: #000;
+}
+
+a:visited {
+  color: #888;
+}
+
+a:hover {
+  color: #555;
+}
+
+header[role=banner] h1 {
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+  @include header($double-great-primer-ratio);
+}
+
+sub,
+sup {
+  margin-left: 1px;
+  font-size: $brevier;
+}
+
+code {
+  font-size: $font-size - 4;
+}
+
+pre code {
+  font-size: $font-size - 2;
+  display: block;
+}
